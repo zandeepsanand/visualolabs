@@ -1,0 +1,198 @@
+.header {
+	padding: 50px 0;
+	@include d {
+		padding: 44px 0; }
+	@include m {
+		padding: 48px 0 40px; }
+	&__center {
+		display: flex;
+		align-items: center;
+		@include m {
+			padding: 0 32px; } }
+	&__logo {
+		flex-shrink: 0;
+		@include d {
+			position: relative;
+			z-index: 12; } }
+	&__pic {
+		width: 138px;
+		@include m {
+			width: 115px; }
+		&_light {
+			display: none; } }
+	&__wrapper {
+		display: flex;
+		align-items: center;
+		flex-grow: 1;
+		padding-left: 55px;
+		@include d {
+			position: absolute;
+			top: 0;
+			left: 0;
+			right: 0;
+			z-index: 10;
+			height: 100vh;
+			padding: 174px 64px 64px;
+			flex-direction: column;
+			align-items: flex-start;
+			overflow: hidden;
+			background: $light;
+			visibility: hidden;
+			opacity: 0;
+			transition: all .2s;
+			&.visible {
+				visibility: visible;
+				opacity: 1; } }
+		@include t {
+			padding: 174px 32px 64px; }
+		@include m {
+			padding: 128px 32px 40px; } }
+	&__preview {
+		display: none;
+		position: absolute;
+		top: 50%;
+		right: calc(50% - 803px);
+		transform: translateY(-51.5%);
+		pointer-events: none;
+		@include d {
+			display: block; }
+		@include m {
+			display: none; }
+		@include s {
+			display: block;
+			top: auto;
+			right: -300px;
+			width: 650px;
+			bottom: 100px;
+			transform: translateY(0);
+			img {
+				width: 100%; } } }
+	&__nav {
+		display: flex;
+		align-items: center;
+		margin-right: auto;
+		@include d {
+			flex-direction: column;
+			align-items: flex-start;
+			margin-bottom: auto; }
+		@include m {
+			position: relative;
+			z-index: 3;
+			flex-wrap: wrap;
+			flex-direction: row;
+			margin: -16px 0 auto -24px; }
+		@include s {
+			flex-direction: column;
+			margin: 0 0 auto; } }
+	&__link {
+		font-weight: 600;
+		color: $gray;
+		transition: color .2s;
+		@include d {
+			@include fp;
+			font-size: 32px;
+			line-height: (40/32); }
+		@include t {
+			color: rgba($black, .7); }
+		@include m {
+			margin: 16px 0 0 24px;
+			font-size: 24px;
+			color: $black; }
+		@include s {
+			margin: 0; }
+		&:hover {
+			color: $black; }
+		&.active {
+			color: $primary;
+			@include t {
+				color: $primary; }
+			@include m {
+				color: $primary; } }
+		@include nl {
+			margin-right: 48px;
+			@include d {
+				margin: 0 0 32px; }
+			@include m {
+				margin: 16px 0 0 24px; }
+			@include s {
+				margin: 0 0 24px; } } }
+	&__btns {
+		display: flex;
+		@include m {
+			position: relative;
+			z-index: 3;
+			flex-direction: row-reverse;
+			width: calc(100% + 16px);
+			margin: 0 -8px; } }
+	&__btn {
+		min-width: auto;
+		@include m {
+			flex: 0 0 calc(50% - 12px);
+			min-width: calc(50% - 12px);
+			margin: 0 6px; }
+		@include nl {
+			margin-right: 8px;
+			@include m {
+				margin-right: 6px; } } }
+	&__burger {
+		position: relative;
+		z-index: 12;
+		display: none;
+		width: 32px;
+		height: 32px;
+		margin-left: auto;
+		text-align: center;
+		transition: background .3s;
+		-webkit-tap-highlight-color: rgba(0,0,0,0);
+		@include d {
+			display: inline-block; }
+		&:before,
+		&:after {
+			display: block;
+			width: 32px;
+			height: 2px;
+			background: $black;
+			transition: transform .2s, width .2s, background .2s; }
+		&:before,
+		&:after {
+			content: '';
+			margin: 8px auto; }
+		&.active {
+			&:before {
+				transform: translateY(5.5px) rotate(45deg); }
+			&:after {
+				transform: translateY(-5.5px) rotate(-45deg); } } }
+	@include nl {
+		margin-bottom: 20px;
+		@include d {
+			margin-bottom: 12px; }
+		@include m {
+			margin: 0; } } }
+
+@include dark {
+	.header {
+		&__pic {
+			&_dark {
+				display: none; }
+			&_light {
+				display: inline-block; } }
+		&__link {
+			@include t {
+				color: rgba($white, .7); }
+			@include m {
+				color: $white; }
+			&:hover {
+				color: $white; }
+			&.active {
+				color: $primary;
+				@include t {
+					color: $primary; }
+				@include m {
+					color: $primary; } } }
+		&__burger {
+			&:before,
+			&:after {
+				background: $white; } }
+		&__wrapper {
+			@include d {
+				background: $dark; } } } }

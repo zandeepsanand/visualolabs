@@ -1,0 +1,104 @@
+.options {
+	.stage {
+		margin-bottom: 16px;
+		text-align: center; }
+	&__title {
+		margin-bottom: 88px;
+		text-align: center;
+		@include d {
+			margin-bottom: 56px; }
+		@include m {
+			margin-bottom: 24px; } }
+	&__preview {
+		margin: 0 -25px 110px -20px;
+		@include d {
+			margin-bottom: 95px; }
+		@include m {
+			margin: 0 -60px 48px -60px; }
+		img {
+			max-width: 100%; } }
+	&__wrap {
+		@include m {
+			position: relative;
+			&:after {
+				content: "";
+				position: absolute;
+				top: 0;
+				right: -32px;
+				bottom: 0;
+				width: 64px;
+				pointer-events: none;
+				background: linear-gradient(270deg, #EEEFF2 0%, rgba(#EEEFF2, .7) 50%, rgba(238, 239, 242, 0) 100%); } } }
+	&__list {
+		display: flex;
+		flex-wrap: wrap;
+		margin: -72px -12px 0;
+		@include t {
+			flex-wrap: nowrap;
+			margin: 0 -32px;
+			overflow: auto;
+			-ms-overflow-style: none;
+			scrollbar-width: none;
+			-webkit-overflow-scrolling: touch;
+			&::-webkit-scrollbar {
+				display: none; }
+			&:before,
+			&:after {
+				content: "";
+				flex-shrink: 0;
+				width: 32px;
+				height: 1px; } }
+		@include m {
+			margin: 0 -24px;
+			&:before,
+			&:after {
+				width: 24px; } } }
+	&__item {
+		flex: 0 0 calc(25% - 24px);
+		width: calc(25% - 24px);
+		margin: 72px 12px 0;
+		@include t {
+			flex: 0 0 250px;
+			width: 250px;
+			margin: 0; }
+		@include nl {
+			@include t {
+				margin-right: 16px; } } }
+	&__icon {
+		display: flex;
+		align-items: center;
+		height: 48px;
+		margin-bottom: 24px;
+		font-size: 0; }
+	&__info {
+		max-width: 210px;
+		margin-bottom: 24px;
+		@include h6; }
+	&__text {
+		position: relative;
+		max-width: 215px;
+		padding-top: 28px;
+		color: $gray;
+		&:before {
+			content: "";
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 80px;
+			height: 4px;
+			background: rgba($secondary, .15); } }
+	@include nl {
+		margin-bottom: 136px;
+		@include d {
+			margin-bottom: 112px; }
+		@include m {
+			margin-bottom: 72px; } } }
+
+@include dark {
+	.options {
+		&__icon {
+			path {
+				fill: $white; } }
+		&__wrap {
+			&:after {
+				background: linear-gradient(270deg, $dark 0%, rgba($dark, .7) 50%, rgba($dark, 0) 100%); } } } }

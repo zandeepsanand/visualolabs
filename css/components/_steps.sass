@@ -1,0 +1,75 @@
+.steps {
+	text-align: center;
+	.stage {
+		margin-bottom: 16px; }
+	&__title {
+		margin-bottom: 48px;
+		@include m {
+			margin-bottom: 32px; } }
+	&__list {
+		display: flex;
+		@include m {
+			display: block;
+			max-width: 240px;
+			margin: 0 auto; } }
+	&__item {
+		flex: 0 0 25%;
+		width: 25%;
+		padding: 46px 24px;
+		@include t {
+			padding: 32px 8px; }
+		@include m {
+			width: 100%;
+			padding: 0; }
+		@include nl {
+			position: relative;
+			@include m {
+				margin-bottom: 24px;
+				padding-bottom: 24px; }
+			&:before {
+				content: "";
+				position: absolute;
+				top: 0;
+				right: -2px;
+				bottom: 0;
+				width: 4px;
+				background: rgba($secondary, .15);
+				@include t {
+					right: -1px;
+					width: 2px; }
+				@include m {
+					top: auto;
+					right: 0;
+					left: 0;
+					bottom: -2px;
+					width: 100%;
+					height: 4px; } } } }
+	&__icon {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		height: 64px;
+		margin-bottom: 16px;
+		font-size: 0; }
+	&__number {
+		display: inline-block;
+		margin-bottom: 16px;
+		padding: 0 10px;
+		border-radius: 14px;
+		background: $secondary;
+		font-size: 12px;
+		font-weight: 900;
+		line-height: 28px;
+		color: rgba($white, .75); }
+	@include nl {
+		margin-bottom: 140px;
+		@include d {
+			margin-bottom: 112px; }
+		@include m {
+			margin-bottom: 48px; } } }
+
+@include dark {
+	.steps {
+		&__icon {
+			path {
+				fill: $white; } } } }

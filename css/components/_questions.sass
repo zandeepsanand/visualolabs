@@ -1,0 +1,104 @@
+.questions {
+	&__center {
+		max-width: 818px;
+		@include m {
+			padding: 0 12px; } }
+	&__preview {
+		margin-bottom: 26px;
+		text-align: center; }
+	&__title {
+		max-width: 455px;
+		margin: 0 auto 56px;
+		text-align: center;
+		@include m {
+			margin-bottom: 40px; } }
+	&__nav {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		margin-bottom: 64px;
+		@include m {
+			display: none; } }
+	&__link {
+		padding: 0 16px;
+		border-radius: 20px;
+		@include fp;
+		font-size: 18px;
+		font-weight: 600;
+		line-height: 40px;
+		color: $black;
+		transition: all .2s;
+		&:hover {
+			color: $primary; }
+		&.active {
+			background: $white;
+			color: $black; }
+		@include nl {
+			margin-right: 16px; } }
+	&__item {
+		padding: 8px 32px;
+		border-radius: 16px;
+		transition: all .2s;
+		@include m {
+			padding: 12px; }
+		&.active {
+			background: $white; }
+		@include nl {
+			margin-bottom: 8px; } }
+	&__head {
+		position: relative;
+		padding: 8px 40px 8px 0;
+		@include title;
+		color: $gray;
+		cursor: pointer;
+		transition: color .2s;
+		-webkit-tap-highlight-color: rgba(0,0,0,0);
+		@include m {
+			padding: 0 40px 0 0; }
+		&:before {
+			content: "";
+			position: absolute;
+			top: 8px;
+			right: 0;
+			width: 24px;
+			height: 24px;
+			background: url("data:image/svg+xml,%3Csvg width='24' height='24' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M16 10L12 14L8 10' stroke='black' stroke-width='2' stroke-miterlimit='10' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E%0A") no-repeat 50% 50% / 100% auto;
+			transition: transform .2s;
+			@include m {
+				top: 0; } }
+		&:hover {
+			color: $black; } }
+	&__item.active &__head {
+		color: $black;
+		&:before {
+			transform: rotate(180deg); } }
+	&__body {
+		display: none;
+		padding: 8px 0;
+		color: $gray;
+		@include m {
+			padding: 16px 0 8px; } }
+	@include nl {
+		margin-bottom: 120px;
+		@include d {
+			margin-bottom: 96px; }
+		@include m {
+			margin-bottom: 36px; } } }
+
+@include dark {
+	.questions {
+		&__link {
+			color: rgba($white, .75);
+			&:hover {
+				color: $white; }
+			&.active {
+				color: $black; } }
+		&__item.active {
+			background: rgba(#283036, .5); }
+		&__head {
+			&:before {
+				background: url("data:image/svg+xml,%3Csvg width='24' height='24' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M16 10L12 14L8 10' stroke='white' stroke-width='2' stroke-miterlimit='10' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E%0A") no-repeat 50% 50% / 100% auto; }
+			&:hover {
+				color: $white; } }
+		&__item.active .questions__head {
+			color: $white; } } }

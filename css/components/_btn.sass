@@ -1,0 +1,68 @@
+.btn {
+	display: inline-flex;
+	justify-content: center;
+	align-items: center;
+	min-width: 124px;
+	height: 56px;
+	padding: 0 24px;
+	border-radius: 16px;
+	font-size: 16px;
+	font-weight: 700;
+	transition: all .2s;
+	.icon {
+		transition: fill .2s;
+		@include nl {
+			margin-right: 11px; } }
+	&_orange {
+		background: $primary;
+		color: $white;
+		&:hover {
+			background: darken($primary, 10); } }
+	&_transparent {
+		background: transparent;
+		color: $gray;
+		@include m {
+			box-shadow: inset 0 0 0 2px #272E35;
+			color: #272E35; }
+		&:hover {
+			color: $black;
+			@include m {
+				background: #272E35;
+				color: $white; } } }
+	&_border {
+		box-shadow: inset 0 0 0 2px rgba($black, .75);
+		color: $black;
+		&:hover {
+			background: $black;
+			box-shadow: none;
+			color: $white;
+			.icon {
+				fill: $white; } } }
+	&_dark {
+		background: #35414B;
+		color: $gray;
+		&:hover {
+			color: $white; } } }
+
+@include dark {
+	.btn {
+		&_transparent {
+			@include m {
+				box-shadow: inset 0 0 0 2px rgba($white, .75);
+				color: rgba($white, .75); }
+			&:hover {
+				color: $white;
+				@include m {
+					background: rgba($white, .75);
+					color: $black; } } }
+		&_border {
+			box-shadow: inset 0 0 0 2px rgba($white, .75);
+			color: rgba($white, .75);
+			.icon {
+				fill: rgba($white, .75); }
+			&:hover {
+				background: rgba($white, .75);
+				box-shadow: none;
+				color: $black;
+				.icon {
+					fill: $black; } } } } }

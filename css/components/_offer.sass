@@ -1,0 +1,40 @@
+.offer {
+	&__center {
+		@include d {
+			padding: 0 32px; }
+		@include m {
+			padding: 0 12px; } }
+	&__container {
+		position: relative;
+		padding: 64px 64px 120px;
+		border-radius: 24px;
+		background: linear-gradient(90.33deg, #FEA989 0.02%, #99B4DB 98.92%);
+		text-align: center;
+		@include m {
+			padding: 80px 12px 88px; } }
+	&__title {
+		max-width: 835px;
+		margin: 0 auto 32px;
+		text-align: center;
+		@include d {
+			font-size: 48px;
+			line-height: (56/48); }
+		@include m {
+			font-size: 40px;
+			line-height: (48/40); } }
+	&__preview {
+		position: absolute;
+		left: 50%;
+		bottom: -180px;
+		transform: translateX(-50%);
+		@include m {
+			bottom: -105px;
+			width: 400px;
+			img {
+				width: 100%; } } }
+	@include nl {
+		margin-bottom: 316px;
+		@include d {
+			margin-bottom: 290px; }
+		@include m {
+			margin-bottom: 150px; } } }

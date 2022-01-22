@@ -1,0 +1,200 @@
+.quality {
+	&__center {
+		@include d {
+			padding: 0 32px; }
+		@include m {
+			padding: 0 12px; } }
+	&__body {
+		position: relative;
+		display: flex;
+		justify-content: flex-end;
+		align-items: center;
+		min-height: 600px;
+		@include t {
+			min-height: 450px; }
+		@include m {
+			min-height: auto;
+			padding: 48px 20px 330px;
+			text-align: center; } }
+	&__bg {
+		@include coverdiv;
+		overflow: hidden;
+		background: $dark-bg;
+		border-radius: 24px;
+		&:before,
+		&:after {
+			content: "";
+			position: absolute;
+			border-radius: 50%;
+			background: linear-gradient(135.15deg, #AE80DC 1.17%, #DC83C3 31.88%, #8084DC 65.46%); }
+		&:before {
+			top: -280px;
+			left: -280px;
+			width: 560px;
+			height: 560px;
+			opacity: 0.6;
+			filter: blur(278.261px);
+			@include d {
+				left: -360px; } }
+		&:after {
+			right: -194px;
+			bottom: -181px;
+			width: 390px;
+			height: 390px;
+			filter: blur(160px);
+			opacity: 0.6;
+			@include d {
+				right: -274px;
+				bottom: -181px; }
+			@include m {
+				display: none; } } }
+	&__gallery {
+		position: absolute;
+		top: 62%;
+		left: calc(50% - 570px);
+		z-index: 3;
+		transform: translateY(-50%);
+		@include d {
+			top: 59%;
+			left: calc(50% - 485px);
+			width: 700px; }
+		@include t {
+			top: 63%;
+			left: calc(50% - 420px);
+			width: 550px; }
+		@include m {
+			top: auto;
+			left: 50%;
+			bottom: -110px;
+			transform: translateX(-40%);
+			width: 500px; } }
+	&__preview {
+		&:nth-child(2) {
+			top: -43.5%;
+			left: 25%;
+			width: 31%; }
+		&:nth-child(3) {
+			top: -8%;
+			left: 1.5%;
+			width: 35%;
+			&.aos-animate {
+				animation: up-down 4s 1.2s infinite; } }
+		&:nth-child(4) {
+			top: -24%;
+			right: 20%;
+			width: 42%;
+			&.aos-animate {
+				animation: up-down 4s 1.8s infinite; } }
+		&:nth-child(5) {
+			top: 32%;
+			left: -8.5%;
+			width: 26%;
+			@include d {
+				display: none; } }
+		img {
+			width: 100%; }
+		@include nf {
+			position: absolute; } }
+	&__wrap {
+		position: relative;
+		z-index: 3;
+		max-width: 455px;
+		padding-right: 110px;
+		@include d {
+			max-width: 390px;
+			padding-right: 45px; }
+		@include t {
+			max-width: 340px;
+			padding-right: 40px; }
+		@include m {
+			max-width: 100%;
+			margin: 0 auto;
+			padding: 0; } }
+	&__title {
+		margin-bottom: 24px;
+		color: $white;
+		@include m {
+			margin-bottom: 16px; } }
+	&__text {
+		margin-bottom: 24px;
+		color: $gray-dark; }
+	&__btn {
+		box-shadow: inset 0 0 0 2px rgba($white, .75);
+		color: $white;
+		&:hover {
+			background: $white;
+			color: $black; } }
+	&__bottom {
+		display: flex;
+		margin: -21px 8px 0;
+		padding: 0 50px;
+		border-radius: 0 0 24px 24px;
+		background: linear-gradient(90.33deg, #FEA989 0.02%, #99B4DB 98.92%);
+		@include d {
+			padding: 0; }
+		@include m {
+			display: block;
+			margin: -21px 0 0;
+			padding: 120px 56px 0; } }
+	&__item {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		flex: 0 0 33.333%;
+		width: 33.333%;
+		padding: 80px 30px 60px;
+		text-align: center;
+		@include t {
+			padding: 64px 24px 50px; }
+		@include m {
+			width: 100%;
+			padding: 24px 0 50px; }
+		&:nth-child(2) {
+			border-width: 0 2px;
+			border-style: solid;
+			border-color: rgba($white, .15);
+			@include m {
+				border-width: 2px 0; } } }
+	&__counter {
+		position: relative;
+		margin-bottom: 16px;
+		@include d1;
+		@include t {
+			font-size: 64px;
+			line-height: (72/64); }
+		@include m {
+			font-size: 56px;
+			line-height: (64/56); } }
+	&__sign {
+		font-size: 32px;
+		line-height: 1;
+		@include t {
+			font-size: 26px; }
+		&_up {
+			position: relative;
+			top: -34px;
+			@include t {
+				top: -30px; }
+			@include m {
+				top: -26px; } } }
+	&__category {
+		padding: 0 10px;
+		background: $white;
+		border-radius: 14px;
+		box-shadow: 0px 8px 12px rgba(0, 0, 0, 0.15);
+		font-size: 12px;
+		font-weight: 700;
+		line-height: 28px; }
+	@include nl {
+		margin-bottom: 136px;
+		@include d {
+			margin-bottom: 112px; }
+		@include m {
+			margin-bottom: 48px; } } }
+
+@include dark {
+	.quality {
+		&__bottom {
+			color: $black; } } }
+

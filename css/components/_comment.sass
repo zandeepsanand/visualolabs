@@ -1,0 +1,121 @@
+.comment {
+	&__title {
+		max-width: 370px;
+		margin: 0 auto 80px;
+		text-align: center;
+		@include d {
+			margin-bottom: 48px; }
+		@include m {
+			margin-bottom: 40px; } }
+	&__container {
+		margin: 0 -32px;
+		@include d {
+			margin: 0 -16px; } }
+	&__item {
+		margin: 0 32px;
+		@include d {
+			margin: 0 16px; } }
+	&__body {
+		position: relative;
+		margin-bottom: 60px;
+		padding: 40px;
+		border-radius: 24px 24px 24px 0;
+		background: $white;
+		@include d {
+			padding: 32px; }
+		@include m {
+			padding: 40px;
+			border-radius: 24px;
+			text-align: center; }
+		&:after {
+			content: "";
+			position: absolute;
+			top: 100%;
+			left: 0;
+			@include arr(43,43,$white,tl);
+			@include m {
+				left: 50%;
+				transform: translateX(-50%);
+				@include arr(50,25,$white,b); } } }
+	&__text {
+		margin-bottom: 16px;
+		@include fp;
+		font-size: 20px;
+		line-height: (32/20);
+		font-weight: 600; }
+	&__rating {
+		display: flex;
+		align-items: center;
+		@include m {
+			justify-content: center; } }
+	&__icon {
+		@include nl {
+			margin-right: 16px; } }
+	&__author {
+		display: flex;
+		align-items: center;
+		@include m {
+			flex-direction: column;
+			text-align: center; } }
+	&__ava {
+		flex-shrink: 0;
+		width: 64px;
+		height: 64px;
+		margin-right: 24px;
+		@include m {
+			margin: 0 0 12px; }
+		img {
+			width: 100%;
+			min-height: 100%;
+			border-radius: 50%; } }
+	&__details {
+		flex-grow: 1; }
+	&__man {
+		margin-bottom: 4px;
+		font-weight: 700; }
+	&__time {
+		font-size: 14px;
+		line-height: (24/14);
+		color: rgba($black, .75); }
+	.owl-nav {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		margin-top: 83px;
+		@include d {
+			margin-top: 48px; }
+		@include m {
+			margin-top: 40px; } }
+	.owl-carousel .owl-nav button.owl-prev,
+	.owl-carousel .owl-nav button.owl-next {
+		flex-shrink: 0;
+		width: 40px;
+		height: 40px;
+		font-size: 0;
+		.icon {
+			font-size: 16px;
+			fill: $gray;
+			transition: fill .2s; }
+		&:hover .icon {
+			fill: $black; } }
+	.owl-carousel .owl-nav button.owl-prev {
+		margin-right: 24px; }
+	@include nl {
+		margin-bottom: 120px;
+		@include d {
+			margin-bottom: 96px; }
+		@include m {
+			margin-bottom: 72px; } } }
+
+@include dark {
+	.comment {
+		&__body {
+			background: #283036;
+			&:after {
+				border-color: #283036 transparent transparent transparent; } }
+		&__time {
+			color: rgba($white, .75); }
+		.owl-carousel .owl-nav button.owl-prev,
+		.owl-carousel .owl-nav button.owl-next {
+			&:hover .icon {
+				fill: $white; } } } }

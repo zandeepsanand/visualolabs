@@ -1,0 +1,123 @@
+.about {
+	text-align: center;
+	&__center {
+		max-width: 968px; }
+	&__title {
+		max-width: 800px;
+		margin: 0 auto 82px;
+		@include d {
+			max-width: 510px;
+			margin-bottom: 12px; } }
+	&__preview {
+		margin-bottom: 65px;
+		@include m {
+			margin: 0 -32px 48px; }
+		img {
+			max-width: 100%; } }
+	.stage {
+		margin-bottom: 16px; }
+	&__subtitle {
+		margin-bottom: 64px;
+		@include m {
+			margin-bottom: 40px; } }
+	&__list {
+		display: flex;
+		justify-content: center;
+		margin-bottom: 64px;
+		padding-bottom: 64px;
+		border-bottom: 2px solid rgba($secondary, .2);
+		@include m {
+			display: block;
+			margin-bottom: 48px;
+			padding: 0;
+			border: none;
+			text-align: center; } }
+	&__item {
+		max-width: 160px;
+		@include m {
+			margin: 0 auto; }
+		@include nl {
+			margin-right: 102px;
+			@include m {
+				margin: 0 auto 48px; } } }
+	&__icon {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		height: 48px;
+		margin-bottom: 32px;
+		font-size: 0; }
+	&__category {
+		@include h6; }
+	&__info {
+		margin-bottom: 40px;
+		@include caption-13;
+		span {
+			display: block;
+			margin-bottom: 4px;
+			color: $black; } }
+	&__team {
+		display: flex;
+		flex-wrap: wrap;
+		margin: -72px -60px 0;
+		@include t {
+			margin: -64px -30px 0; }
+		@include m {
+			margin: -48px -10px 0; } }
+	&__user {
+		flex: 0 0 calc(25% - 80px);
+		width: calc(25% - 80px);
+		margin: 72px 40px 0;
+		@include t {
+			flex: 0 0 calc(25% - 60px);
+			width: calc(25% - 60px);
+			margin: 60px 30px 0; }
+		@include m {
+			flex: 0 0 calc(50% - 20px);
+			width: calc(50% - 20px);
+			margin: 48px 10px 0; } }
+	&__ava {
+		position: relative;
+		width: 128px;
+		height: 128px;
+		margin: 0 auto 32px;
+		border-width: 0;
+		border-style: solid;
+		border-color: $white;
+		border-radius: 50%;
+		transition: all .2s;
+		img {
+			width: 100%;
+			min-height: 100%;
+			border-radius: 50%;
+			transition: transform .2s; } }
+	&__user:hover &__ava {
+		border-width: 10px;
+		img {
+			transform: scale(.96); } }
+	&__name {
+		margin-bottom: 4px;
+		font-weight: 700; }
+	&__post {
+		margin: 0 -5px;
+		font-size: 14px;
+		line-height: (24/14);
+		color: rgba($black, .75); }
+	@include nl {
+		margin-bottom: 136px;
+		@include d {
+			margin-bottom: 96px; }
+		@include m {
+			margin-bottom: 48px; } } }
+
+@include dark {
+	.about {
+		&__icon {
+			path {
+				fill: $white; } }
+		&__info span {
+			color: $white; }
+		&__post {
+			color: rgba($white, .75); }
+		&__ava {
+			border-color: $dark-bg; } } }

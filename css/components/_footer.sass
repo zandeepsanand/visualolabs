@@ -1,0 +1,113 @@
+.footer {
+	position: relative;
+	&__body {
+		margin-bottom: 55px;
+		@include d {
+			display: flex;
+			align-items: flex-start;
+			margin-bottom: 24px; }
+		@include m {
+			display: block;
+			text-align: center; } }
+	&__wrap {
+		max-width: 345px;
+		margin-bottom: 24px;
+		@include d {
+			margin: 0; }
+		@include m {
+			max-width: 100%;
+			margin-bottom: 24px; } }
+	&__logo {
+		display: inline-block;
+		margin-bottom: 24px; }
+	&__pic {
+		width: 138px;
+		&_light {
+			display: none; } }
+	&__text {
+		color: $gray;
+		@include m {
+			max-width: 230px;
+			margin: 0 auto; } }
+	&__line {
+		display: flex;
+		align-items: center;
+		@include d {
+			margin: -5px 0 0 auto; }
+		@include m {
+			justify-content: center;
+			margin: 0 auto;
+			max-width: 414px; } }
+	&__downloads {
+		display: flex; }
+	&__download {
+		img {
+			@include d {
+				height: 56px; } }
+		@include nl {
+			margin-right: 12px; } }
+	&__nav {
+		display: flex;
+		align-items: center;
+		margin-left: auto;
+		@include d {
+			display: none; } }
+	&__nav &__link {
+		font-weight: 600;
+		color: $gray;
+		transition: color .2s;
+		&:hover {
+			color: $black; }
+		&.active {
+			color: $primary; }
+		@include nl {
+			margin-right: 48px; } }
+	&__bottom {
+		display: flex;
+		align-items: center;
+		padding: 24px 0;
+		border-top: 2px solid rgba($secondary, .15);
+		@include m {
+			display: block;
+			text-align: center; } }
+	&__copyright {
+		margin-right: auto;
+		@include caption-13;
+		color: $gray;
+		@include m {
+			margin: 0 0 24px; } }
+	&__social {
+		display: flex;
+		align-items: center;
+		@include m {
+			justify-content: center; } }
+	&__social &__link {
+		font-size: 0;
+		.icon {
+			font-size: 16px;
+			fill: $gray;
+			transition: fill .2s; }
+		&:hover .icon {
+			fill: $black; }
+		@include nl {
+			margin-right: 24px; } } }
+
+@include dark {
+	.footer {
+		&__pic {
+			&_dark {
+				display: none; }
+			&_light {
+				display: inline-block; } }
+		&__link {
+			&:hover {
+				color: $white; }
+			&.active {
+				color: $primary; } }
+		&__copyright {
+			color: $gray-light; }
+		&__social .footer__link {
+			.icon {
+				fill: $gray-light; }
+			&:hover .icon {
+				fill: $white; } } } }
