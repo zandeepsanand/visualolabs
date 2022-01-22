@@ -2817,6 +2817,7 @@ body.dark .btn_border:hover .icon {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    position: relative;
 }
 
 .header__btn {
@@ -2896,10 +2897,13 @@ body.dark .header__burger:before,
 body.dark .header__burger:after {
     background: #ffffff;
 }
+.sandeep{
+    position: relative;
+}
 
 .main {
     position: relative;
-    padding-top: 117px;
+    padding-top: 250px;
 }
 
 .main__wrap {
@@ -4382,10 +4386,17 @@ body.dark .footer__social .footer__link .icon {
 body.dark .footer__social .footer__link:hover .icon {
     fill: #ffffff;
 }
+.sticky{
+    position: fixed;
+    top: 0;
+    background-color:#758eb4;
+    width: 100%;
+    z-index: 1000;
+}
 
 .switch {
     position: absolute;
-    left: calc(50% - 700px);
+    /* left: calc(50% - 700px); */
     bottom: 30px;
     display: inline-block;
     -webkit-user-select: none;

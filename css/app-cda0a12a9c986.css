@@ -2681,6 +2681,12 @@ body.dark .header__burger:after {
         background: #1E252B;
     }
 }
+.sandeep{
+    position: relative;
+    padding-top: 117px;
+    display: flex;
+        align-items: flex-start;
+}
 
 .main {
     position: relative;
