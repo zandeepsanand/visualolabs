@@ -56,13 +56,16 @@
   <body>
     
     <script>
-      console.log(localStorage.getItem("darkMode"));
-      if (localStorage.getItem("darkMode") === "on") {
-        document.body.classList.add("dark");
-        document.addEventListener("DOMContentLoaded", function () {
-          document.querySelector(".js-switch-theme input").checked = true;
-        });
-      }
+
+        console.log(localStorage.getItem('darkMode'));
+        if (localStorage.getItem('darkMode') === "on") {
+            document.header.classList.add("dark");
+            document.body.classList.add("dark");
+            document.addEventListener("DOMContentLoaded", function() {
+                document.querySelector('.js-switch-theme input').checked = true;
+            });
+        }
+
     </script>
     
     <div class="page">
