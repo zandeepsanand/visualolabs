@@ -1546,6 +1546,7 @@ class="footer__download" href="#"><img src="img/app-store.svg" alt="" /></a>
                       class="icon icon-light">
                       <use xlink:href="img/sprite.svg#icon-light"></use>
                   </svg></span></span></label> -->
+<<<<<<< HEAD
       </div>
       <div class="popup mfp-hide" id="popup-sign-up">
         <div class="popup__title h2">Sign up</div>
@@ -1635,3 +1636,103 @@ class="footer__download" href="#"><img src="img/app-store.svg" alt="" /></a>
     <script src="js/app.js"></script>
   </body>
 </html>
+=======
+  </div>
+    <div class="popup mfp-hide" id="popup-sign-up">
+     
+      <div class="contact">
+        <div class="contact">
+            <div class="contact__center center">
+              <div class="contact__bg">
+                <div class="contact__preview"><img srcset="img/figures-2.1@2x.png 2x" src="img/figures-2.1.png" alt=""></div>
+                <div class="contact__preview aos-init aos-animate" data-aos="animation-translate-up" data-aos-duration="1000"><img srcset="img/figures-2.2@2x.png 2x" src="img/figures-2.2.png" alt=""></div>
+                <div class="contact__preview aos-init aos-animate" data-aos="animation-translate-down" data-aos-duration="1000" data-aos-delay="400"><img srcset="img/figures-2.3@2x.png 2x" src="img/figures-2.3.png" alt=""></div>
+                <div class="contact__preview aos-init aos-animate" data-aos="animation-translate-down" data-aos-duration="1000" data-aos-delay="800"><img srcset="img/figures-2.4@2x.png 2x" src="img/figures-2.4.png" alt=""></div>
+                <div class="contact__preview"><img srcset="img/figures-2.5@2x.png 2x" src="img/figures-2.5.png" alt=""></div>
+              </div>
+              <div class="contact__wrap">
+                <h1 class="contact__title h2 aos-init aos-animate" data-aos="animation-scale-top" data-aos-duration="600">Contact Us</h1>
+                <div class="contact__info">Questions, bug reports, feedback.</div>
+
+                <form class="contact__form" id="submit-form" action="">
+                  <div class="field">
+                    <div class="field__label">Your email</div>
+                    <div class="field__wrap">
+                        <input class="field__input form-control" type="email" id="email" name="email" placeholder="Enter your email"></div>
+                  </div>
+                  <div class="field">
+                    <div class="field__label">Tell us what you need help with:</div>
+                    <div class="field__wrap">
+                        <textarea class="field__textarea form-control" id="message" name="message" placeholder="Enter a topic, like “channel problem...”"></textarea></div>
+                  </div>
+                  <button type="submit" class="contact__btn btn btn_orange">Send now</button>
+                </form>
+
+              </div>
+            </div>
+          </div>
+    </div>
+    
+    <form class="popup mfp-hide" id="popup-sign-in" >
+      
+      <div class="contact">
+        <div class="contact__center center">
+          <div class="contact__bg">
+            <div class="contact__preview"><img srcset="img/figures-2.1@2x.png 2x" src="img/figures-2.1.png" alt=""></div>
+            <div class="contact__preview aos-init aos-animate" data-aos="animation-translate-up" data-aos-duration="1000"><img srcset="img/figures-2.2@2x.png 2x" src="img/figures-2.2.png" alt=""></div>
+            <div class="contact__preview aos-init aos-animate" data-aos="animation-translate-down" data-aos-duration="1000" data-aos-delay="400"><img srcset="img/figures-2.3@2x.png 2x" src="img/figures-2.3.png" alt=""></div>
+            <div class="contact__preview aos-init aos-animate" data-aos="animation-translate-down" data-aos-duration="1000" data-aos-delay="800"><img srcset="img/figures-2.4@2x.png 2x" src="img/figures-2.4.png" alt=""></div>
+            <div class="contact__preview"><img srcset="img/figures-2.5@2x.png 2x" src="img/figures-2.5.png" alt=""></div>
+          </div>
+          <div class="contact__wrap">
+            <h1 class="contact__title h2 aos-init aos-animate" data-aos="animation-scale-top" data-aos-duration="600">Contact Us</h1>
+            <div class="contact__info">Questions, bug reports, feedback.</div>
+
+            <form class="contact__form" id="submit-form" action="">
+              <div class="field">
+                <div class="field__label">Your email</div>
+                <div class="field__wrap">
+                    <input class="field__input form-control" type="email" id="email" name="email" placeholder="Enter your email"></div>
+              </div>
+              <div class="field">
+                <div class="field__label">Tell us what you need help with:</div>
+                <div class="field__wrap">
+                    <textarea class="field__textarea form-control" id="message" name="message" placeholder="Enter a topic, like “channel problem...”"></textarea></div>
+              </div>
+              <button type="submit" class="contact__btn btn btn_orange">Send now</button>
+            </form>
+            
+          </div>
+        </div>
+      </div>
+  </form>
+  <!-- scripts-->
+  <script src="js/lib/jquery.min.js"></script>
+  <script src="js/lib/svg4everybody.min.js"></script>
+  <script src="js/lib/owl.carousel.min.js"></script>
+  <script src="js/lib/jquery.magnific-popup.min.js"></script>
+  <script src="js/lib/aos.js"></script>
+  <script src="js/app.js"></script>
+  <script>
+    $("#submit-form").submit((e)=>{
+        e.preventDefault()
+        $.ajax({
+            url:"https://script.google.com/macros/s/AKfycbwCTNumfxNxVA70RhGrmisg1T6P5Bu614ldHwiMnb3kRUppzN0Lj2FdLbmZAm3ZLTTm4A/exec",
+            data:$("#submit-form").serialize(),
+            method:"post",
+            success:function (response){
+                alert("Form submitted successfully")
+                // window.location.reload()
+                window.location.href="index.html"
+            },
+            error:function (err){
+                alert("Something Error")
+
+            }
+        })
+    })
+</script>
+</body>
+
+</html>
+>>>>>>> 7175dc3f2b826a2476b42f8b08752e607dee363e
