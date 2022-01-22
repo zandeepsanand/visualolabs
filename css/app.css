@@ -2733,8 +2733,17 @@ body.dark .btn_border:hover .icon {
     fill: #272E35;
 }
 
+body.dark .header {
+    background: #1E252B;
+    color: white;
+ 
+}
 .header {
     padding: 50px 0;
+    position: fixed;
+    width: 100%;
+    background-color: #eeeff2;
+    z-index: 1000;
 }
 
 .header__center {
