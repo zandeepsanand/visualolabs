@@ -78,6 +78,9 @@ summary,
 time,
 mark,
 audio,
+html {
+    scroll-behavior: smooth;
+  }
 video {
     margin: 0;
     padding: 0;
