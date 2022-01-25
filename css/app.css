@@ -2744,6 +2744,14 @@ body.dark .header {
     color: white;
  
 }
+body.dark .contact .field__input {
+    background: white;
+    color: black;
+}
+body.dark .contact .field__textarea {
+    background: white;
+    color: black;
+}
 .header {
     padding: 15px 0;
     position: fixed;
@@ -6112,7 +6120,8 @@ body.dark .questions__item.active .questions__head {
 
 .contact {
     position: relative;
-    padding-top: 50px;
+    padding-top: 10px;
+   
 }
 
 .contact__bg {
@@ -6186,7 +6195,7 @@ body.dark .questions__item.active .questions__head {
 }
 
 .contact:not(:last-child) {
-    margin-bottom: 136px;
+    margin-bottom: 5px;
 }
 
 .field__label {
