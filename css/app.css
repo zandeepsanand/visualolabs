@@ -7295,6 +7295,7 @@ screen and (max-height: 300px) {
     .main__wrap {
         max-width: 100%;
         margin-bottom: 50px;
+        padding-top: 150px;
     }
     .main__title {
         margin-bottom: 20px;
