@@ -2210,7 +2210,7 @@ img {
 }
 
 .btn_orange {
-    background: #FF6E30;
+    background: #731abc;
     color: #ffffff;
 }
 
@@ -2501,18 +2501,18 @@ body.dark .btn_border:hover .icon {
 }
 
 .header__link.active {
-    color: #FF6E30;
+    color: #731abc;
 }
 
 @media only screen and (max-width: 1023px) {
     .header__link.active {
-        color: #FF6E30;
+        color: #731abc;
     }
 }
 
 @media only screen and (max-width: 767px) {
     .header__link.active {
-        color: #FF6E30;
+        color: #731abc;
     }
 }
 
@@ -2656,18 +2656,18 @@ body.dark .header__link:hover {
 }
 
 body.dark .header__link.active {
-    color: #FF6E30;
+    color: #731abc;
 }
 
 @media only screen and (max-width: 1023px) {
     body.dark .header__link.active {
-        color: #FF6E30;
+        color: #731abc;
     }
 }
 
 @media only screen and (max-width: 767px) {
     body.dark .header__link.active {
-        color: #FF6E30;
+        color: #731abc;
     }
 }
 
@@ -5280,7 +5280,7 @@ body.dark .review .owl-carousel .owl-nav button.owl-next:hover .icon {
 }
 
 .footer__nav .footer__link.active {
-    color: #FF6E30;
+    color: #731abc;
 }
 
 .footer__nav .footer__link:not(:last-child) {
@@ -5357,7 +5357,7 @@ body.dark .footer__link:hover {
 }
 
 body.dark .footer__link.active {
-    color: #FF6E30;
+    color: #731abc;
 }
 
 body.dark .footer__copyright {
@@ -5450,7 +5450,7 @@ body.dark .footer__social .footer__link:hover .icon {
     width: 24px;
     height: 24px;
     border-radius: 50%;
-    background: #FF6E30;
+    background: #731abc;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
     transition: all .2s;
 }
@@ -5542,12 +5542,12 @@ body.dark .footer__social .footer__link:hover .icon {
 
 .download__info a {
     border-bottom: 1px solid transparent;
-    color: #FF6E30;
+    color: #731abc;
     transition: border-color .2s;
 }
 
 .download__info a:hover {
-    border-color: #FF6E30;
+    border-color: #731abc;
 }
 
 .download__btn {
@@ -6644,7 +6644,7 @@ body.dark .pricing__view .icon {
     text-align: center;
     font-size: 40px;
     font-weight: 500;
-    color: #FF6E30;
+    color: #731abc;
 }
 
 @media only screen and (max-width: 767px) {
@@ -7728,7 +7728,7 @@ body.dark .comment .owl-carousel .owl-nav button.owl-next:hover .icon {
 }
 
 .questions__link:hover {
-    color: #FF6E30;
+    color: #731abc;
 }
 
 .questions__link.active {

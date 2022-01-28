@@ -2671,12 +2671,12 @@ img {
 }
 
 .btn_orange {
-    background: #FF6E30;
+    background: #731abc;
     color: #ffffff;
 }
 
 .btn_orange:hover {
-    background: #fc4b00;
+    background: #be30b6;
 }
 
 .btn_transparent {
@@ -2829,7 +2829,7 @@ body.dark .contact .field__textarea {
 }
 
 .header__link.active {
-    color: #FF6E30;
+    color: #731abc;
 }
 
 .header__link:not(:last-child) {
@@ -2913,7 +2913,7 @@ body.dark .header__link:hover {
 }
 
 body.dark .header__link.active {
-    color: #FF6E30;
+    color: #731abc;
 }
 
 body.dark .header__burger:before,
@@ -3182,9 +3182,9 @@ body.dark .header__burger:after {
     margin: -21px 8px 0;
     padding: 0 50px;
     border-radius: 0 0 24px 24px;
-    background: -webkit-linear-gradient(359.67deg, #FEA989 0.02%, #99B4DB 98.92%);
-    background: -o-linear-gradient(359.67deg, #FEA989 0.02%, #99B4DB 98.92%);
-    background: linear-gradient(90.33deg, #FEA989 0.02%, #99B4DB 98.92%);
+    background: -webkit-linear-gradient(359.67deg, #731abc 0.02%, #99B4DB 98.92%);
+    background: -o-linear-gradient(359.67deg, #731abc 0.02%, #99B4DB 98.92%);
+    background: linear-gradient(90.33deg, #731abc 0.02%, #99B4DB 98.92%);
 }
 
 .quality__item {
@@ -4328,7 +4328,7 @@ body.dark .review .owl-carousel .owl-nav button.owl-next:hover .icon {
 }
 
 .footer__nav .footer__link.active {
-    color: #FF6E30;
+    color: #731abc;
 }
 
 .footer__nav .footer__link:not(:last-child) {
@@ -4396,7 +4396,7 @@ body.dark .footer__link:hover {
 }
 
 body.dark .footer__link.active {
-    color: #FF6E30;
+    color: #731abc;
 }
 
 body.dark .footer__copyright {
@@ -4480,7 +4480,7 @@ body.dark .footer__social .footer__link:hover .icon {
     width: 24px;
     height: 24px;
     border-radius: 50%;
-    background: #FF6E30;
+    background: #731abc;
     -webkit-box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
     -webkit-transition: all .2s;
@@ -4556,14 +4556,14 @@ body.dark .footer__social .footer__link:hover .icon {
 
 .download__info a {
     border-bottom: 1px solid transparent;
-    color: #FF6E30;
+    color: #731abc;
     -webkit-transition: border-color .2s;
     -o-transition: border-color .2s;
     transition: border-color .2s;
 }
 
 .download__info a:hover {
-    border-color: #FF6E30;
+    border-color: #731abc;
 }
 
 .download__btn {
@@ -5286,7 +5286,7 @@ body.dark .pricing__view .icon {
     text-align: center;
     font-size: 40px;
     font-weight: 500;
-    color: #FF6E30;
+    color: #731abc;
 }
 
 .popup__number input:focus {
@@ -5979,7 +5979,7 @@ body.dark .comment .owl-carousel .owl-nav button.owl-next:hover .icon {
 }
 
 .questions__link:hover {
-    color: #FF6E30;
+    color: #731abc;
 }
 
 .questions__link.active {
@@ -6941,13 +6941,13 @@ screen and (max-height: 300px) {
         color: rgba(39, 46, 53, 0.7);
     }
     .header__link.active {
-        color: #FF6E30;
+        color: #731abc;
     }
     body.dark .header__link {
         color: rgba(255, 255, 255, 0.7);
     }
     body.dark .header__link.active {
-        color: #FF6E30;
+        color: #731abc;
     }
     .main__wrap {
         margin-bottom: 100px;
@@ -7263,7 +7263,7 @@ screen and (max-height: 300px) {
         color: #272E35;
     }
     .header__link.active {
-        color: #FF6E30;
+        color: #731abc;
     }
     .header__link:not(:last-child) {
         margin: 16px 0 0 24px;
@@ -7295,7 +7295,7 @@ screen and (max-height: 300px) {
         color: #ffffff;
     }
     body.dark .header__link.active {
-        color: #FF6E30;
+        color: #731abc;
     }
     .main {
         padding: 0;
