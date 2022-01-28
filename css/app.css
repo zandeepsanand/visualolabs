@@ -5494,6 +5494,7 @@ body.dark .pricing__view .icon {
 
 .about {
   text-align: center;
+  padding-top: 150px;
 }
 
 .about__center {
@@ -8909,7 +8910,7 @@ body.dark .field__textarea {
 }
 @media only screen and (min-width: 767px) {
   .new {
-    position: sticky;
+    position: relative;
     margin-top: -4%;
   }
 }
