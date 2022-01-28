@@ -3428,6 +3428,14 @@ body.dark .steps__icon path {
 .advantages__item:nth-child(2) .advantages__preview:nth-child(3) img {
     width: 100%;
 }
+.video{
+    position: relative;
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 548px;
+    flex: 0 0 548px;
+    width: 548px;
+    margin-right: auto;
+}
 
 .advantages__item:nth-child(2) .advantages__wrap {
     padding-bottom: 27px;
@@ -6511,6 +6519,7 @@ screen and (max-height: 300px) {
     .main__wrap {
         max-width: 360px;
         margin-bottom: 155px;
+        margin-top: -45px;
     }
     .main__text {
         max-width: 260px;
