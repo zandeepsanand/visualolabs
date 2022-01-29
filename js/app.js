@@ -108,6 +108,13 @@ $(document).ready(function() {
         $('html').toggleClass('no-scroll');
         $('body').toggleClass('no-scroll');
     });
+
+    wrapper.on('click', function() {
+        burger.toggleClass('active');
+        wrapper.toggleClass('visible');
+        $('html').toggleClass('no-scroll');
+        $('body').toggleClass('no-scroll');
+    });
 })();
 
 // pricing options
