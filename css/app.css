@@ -5601,6 +5601,7 @@ body.dark .pricing__view .icon {
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
   margin: -52px -60px 0;
+  margin-bottom: 3%;
 }
 
 .about__user {
