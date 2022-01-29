@@ -5576,10 +5576,12 @@ body.dark .pricing__view .icon {
 }
 
 .about__info {
-  margin-bottom: 40px;
-  font-size: 13px;
+  margin-bottom: 5%;
+  margin-top: 10%;
+  font-size: 25px;
   line-height: 1.84615;
   font-weight: 600;
+
 }
 
 .about__info span {
