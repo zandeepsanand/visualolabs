@@ -2854,7 +2854,7 @@ body.dark .contact .field__textarea {
   position: relative;
 }
 .header__btns a {
-  height: 45px;
+  height: 35px;
 }
 .header__btn {
   min-width: auto;
@@ -4403,6 +4403,9 @@ body.dark .review .owl-carousel .owl-nav button.owl-next:hover .icon {
   -ms-flex-align: center;
   align-items: center;
 }
+.footer__download a {
+  float: right;
+}
 
 .footer__downloads {
   display: -webkit-box;
@@ -4417,7 +4420,7 @@ body.dark .review .owl-carousel .owl-nav button.owl-next:hover .icon {
 .footer__nav {
   display: -webkit-box;
   display: -ms-flexbox;
-  display: flex;
+  /* display: flex; */
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
@@ -5576,16 +5579,12 @@ body.dark .pricing__view .icon {
 }
 
 .about__info {
-
-
-
   margin-bottom: 5%;
   margin-top: 10%;
   font-size: 25px;
 
   line-height: 1.84615;
   font-weight: 600;
-
 }
 
 .about__info span {
@@ -8914,6 +8913,18 @@ body.dark .field__textarea {
 }
 .main .main__wrap .span2 {
   font-size: 72px;
+}
+.main .main__btns a button {
+  height: 40px;
+}
+.quality .quality__wrap a button {
+  height: 40px;
+}
+.advantages .advantages__list a button {
+  height: 40px;
+}
+.history__container a {
+  height: 40px;
 }
 @media only screen and (max-width: 765px) {
   .main .main__wrap .span1 {
