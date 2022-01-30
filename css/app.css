@@ -8933,6 +8933,20 @@ body.dark .field__textarea {
   .main .main__wrap .span2 {
     font-size: 50px;
   }
+  .footer__downloads {
+    padding-bottom: 30%;
+  }
+  .footer__line {
+    position: relative;
+  }
+
+  .footer__nav {
+    padding-top: 20%;
+    display: block;
+    position: absolute;
+    padding-left: 10%;
+    margin-left: 5%;
+  }
 }
 @media only screen and (max-width: 1176px) {
   .main__wrap {
@@ -8947,17 +8961,44 @@ body.dark .field__textarea {
   .header__center {
     margin-left: -10px;
   }
+  .footer__downloads {
+    padding-bottom: 30%;
+  }
+  .footer__line {
+    position: relative;
+  }
+
+  .footer__nav {
+    padding-top: 25%;
+    display: block;
+    position: absolute;
+  }
 }
 @media screen and (min-width: 766px) and (max-width: 1177px) {
   .main__preview {
     margin-top: -15%;
     margin-left: 10%;
   }
+  .footer__nav {
+    padding-top: 30%;
+  }
+  .footer__downloads {
+    padding-bottom: 30%;
+  }
+  .footer__line {
+    position: relative;
+  }
+
+  .footer__nav {
+    padding-top: 25%;
+    display: block;
+    position: absolute;
+  }
 }
 @media only screen and (min-width: 767px) {
   .new {
     position: relative;
-    margin-top: -4%;
+    margin-top: -5%;
   }
 }
 
