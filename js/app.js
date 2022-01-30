@@ -107,12 +107,14 @@ $(document).ready(function() {
         wrapper.toggleClass('visible');
         $('html').toggleClass('no-scroll');
         $('body').toggleClass('no-scroll');
-        wrapper.on('click', function() {
+    });
+    wrapper.on('click', function() {
+        if($('body').hasClass("no-scroll")){
             burger.toggleClass('active');
             wrapper.toggleClass('visible');
             $('html').toggleClass('no-scroll');
             $('body').toggleClass('no-scroll');
-        });
+        }
     });
 
 })();
