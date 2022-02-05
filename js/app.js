@@ -69,6 +69,16 @@ $(document).ready(function() {
     });
 })();
 
+// header coloe change 
+$(window).on("scroll", function() {
+    if($(window).scrollTop() > 200) {
+        $(".header").addClass("active");
+    } else {
+        //remove the background property so it comes transparent again (defined in your css)
+       $(".header").removeClass("active");
+    }
+});
+
 // faq
 (function() {
     var item = $('.faq__item, .questions__item'),
