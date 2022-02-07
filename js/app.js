@@ -74,6 +74,7 @@ $(window).on("scroll", function() {
     if($(window).scrollTop() > 200) {
         $(".header").removeClass("active");
         $(".header__link").removeClass("color");
+        
 
        
     } else {

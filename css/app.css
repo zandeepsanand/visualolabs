@@ -2766,10 +2766,13 @@ body.dark .btn_border:hover .icon {
   fill: #272e35;
 }
 
-body.dark .header {
-  background: #1e252b;
-  color: white;
+.dark .header {
+  background-color: 
+  #1e252b;
+  
 }
+
+
 body.dark .contact .field__input {
   background: white;
   color: black;
@@ -2786,6 +2789,7 @@ body.dark .contact .field__textarea {
   z-index: 1000;
   height: 10%;
 }
+
 
 .header__center {
   display: -webkit-box;
