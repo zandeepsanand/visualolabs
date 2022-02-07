@@ -7882,6 +7882,21 @@ body.dark .field__textarea {
   }
 }
 
+.header.active{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 0;
+  z-index: 10000;
+  transition: all 0.2s ease-in-out;
+  height: auto;
+  background-color:transparent;  
+  
+  text-align: center;
+  line-height: 40px;
+}
+
 @media only screen and (max-width: 767px) {
   .center {
     padding: 0 20px;
@@ -7904,6 +7919,8 @@ body.dark .field__textarea {
     background: rgba(255, 255, 255, 0.75);
     color: #272e35;
   }
+
+
   .header {
     padding: 48px 0 40px;
   }
