@@ -73,9 +73,13 @@ $(document).ready(function() {
 $(window).on("scroll", function() {
     if($(window).scrollTop() > 200) {
         $(".header").removeClass("active");
+        $(".header__link").removeClass("color");
+
+       
     } else {
         //remove the background property so it comes transparent again (defined in your css)
         $(".header").addClass("active");
+        $(".header__link").addClass("color");
         
     }
 });

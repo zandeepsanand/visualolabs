@@ -98,7 +98,9 @@ video {
   opacity: .8;
   z-index: -1000;
 }
-
+.color{
+  color: #ffffff;
+}
 
 html {
   -ms-text-size-adjust: 100%;
@@ -205,6 +207,7 @@ html {
 
 a {
   text-decoration: none;
+  color: #6e757c;
 }
 
 a,
@@ -2839,10 +2842,13 @@ body.dark .contact .field__textarea {
   align-items: center;
   margin-right: auto;
 }
+.header__link a{
+  color: gray;
+}
 
 .header__link {
   font-weight: 600;
-  color: #6e757c;
+  /* color: #6e757c; */
   -webkit-transition: color 0.2s;
   -o-transition: color 0.2s;
   transition: color 0.2s;
@@ -6556,7 +6562,14 @@ body.dark .field__textarea {
 
 @media screen and (max-width: 800px) and (orientation: landscape),
   screen and (max-height: 300px) {
+    .switch {
+      top: auto;
+      right: auto;
+      left: 12px;
+      bottom: 8px;
+  }
   /**
+
        * Remove all paddings around the image on small screen
        */
   .mfp-img-mobile .mfp-image-holder {
@@ -6606,11 +6619,21 @@ body.dark .field__textarea {
 
 @media only screen and (max-width: 1419px) {
   .switch {
-    left: 32px;
-  }
+    top: auto;
+    right: auto;
+    left: 12px;
+    bottom: 8px;
+}
+  
 }
 
 @media only screen and (max-width: 1339px) {
+  .switch {
+    top: auto;
+    right: auto;
+    left: 12px;
+    bottom: 8px;
+}
   .review .owl-nav {
     margin-top: 80px;
   }
@@ -6626,6 +6649,12 @@ body.dark .field__textarea {
 }
 
 @media only screen and (max-width: 1179px) {
+  .switch {
+    top: auto;
+    right: auto;
+    left: 12px;
+    bottom: 8px;
+}
   .header {
     padding: 44px 0;
   }
@@ -7604,6 +7633,12 @@ body.dark .field__textarea {
 }
 
 @media only screen and (max-width: 1023px) {
+  .switch {
+    top: auto;
+    right: auto;
+    left: 12px;
+    bottom: 8px;
+}
   .center {
     padding: 0 32px;
   }
@@ -7855,6 +7890,12 @@ body.dark .field__textarea {
 }
 
 @media all and (max-width: 900px) {
+  .switch {
+    top: auto;
+    right: auto;
+    left: 12px;
+    bottom: 8px;
+}
   .mfp-arrow {
     -webkit-transform: scale(0.75);
     -ms-transform: scale(0.75);
@@ -7877,27 +7918,32 @@ body.dark .field__textarea {
 }
 
 @media (max-width: 900px) {
+  .switch {
+    top: auto;
+    right: auto;
+    left: 12px;
+    bottom: 8px;
+}
   .mfp-container {
     padding: 30px 20px;
   }
 }
 
 .header.active{
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  padding: 0;
-  z-index: 10000;
-  transition: all 0.2s ease-in-out;
-  height: auto;
+ 
   background-color:transparent;  
   
-  text-align: center;
-  line-height: 40px;
+  /* text-align: center; */
+  /* line-height: 40px; */
 }
 
 @media only screen and (max-width: 767px) {
+  .switch {
+    top: auto;
+    right: auto;
+    left: 12px;
+    bottom: 8px;
+}
   .center {
     padding: 0 20px;
   }
@@ -7922,7 +7968,7 @@ body.dark .field__textarea {
 
 
   .header {
-    padding: 48px 0 40px;
+    padding: 18px 0 40px;
   }
   .header__center {
     padding: 0 32px;
@@ -8899,6 +8945,12 @@ body.dark .field__textarea {
 }
 
 @media only screen and (max-width: 474px) {
+  .switch {
+    top: auto;
+    right: auto;
+    left: 12px;
+    bottom: 8px;
+}
   .header__preview {
     display: block;
     top: auto;
@@ -8957,6 +9009,12 @@ body.dark .field__textarea {
   height: 40px;
 }
 @media only screen and (max-width: 765px) {
+  .switch {
+    top: auto;
+    right: auto;
+    left: 12px;
+    bottom: 8px;
+}
   .main .main__wrap .span1 {
     font-size: 35px;
   }
@@ -8979,6 +9037,12 @@ body.dark .field__textarea {
   }
 }
 @media only screen and (max-width: 1176px) {
+  .switch {
+    top: auto;
+    right: auto;
+    left: 12px;
+    bottom: 8px;
+}
   .main__wrap {
     margin-top: 10%;
   }
@@ -9005,6 +9069,12 @@ body.dark .field__textarea {
   }
 }
 @media screen and (min-width: 766px) and (max-width: 1177px) {
+  .switch {
+    top: auto;
+    right: auto;
+    left: 12px;
+    bottom: 8px;
+}
   .main__preview {
     margin-top: -15%;
     margin-left: 10%;
@@ -9028,7 +9098,7 @@ body.dark .field__textarea {
 @media only screen and (min-width: 767px) {
   .new {
     position: relative;
-    margin-top: -5%;
+    margin-top: 39%;
   }
 }
 
