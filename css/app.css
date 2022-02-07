@@ -6501,6 +6501,16 @@ body.dark .field__textarea {
   letter-spacing: 0.1em;
   line-height: 1.33333;
   text-transform: uppercase;
+  color: 
+  #6b747c;
+}
+.tagline {
+  margin-bottom: 24px;
+  font-size: 12px;
+  font-weight: 900;
+  letter-spacing: 0.1em;
+  line-height: 1.33333;
+  text-transform: uppercase;
   color: #ffffff;
 }
 
