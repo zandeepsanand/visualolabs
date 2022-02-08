@@ -838,12 +838,12 @@
               <div class="field">
                 <div class="field__label">Your email</div>
                 <div class="field__wrap">
-                    <input class="field__input form-control" type="email" id="email" name="email" placeholder="Enter your email"></div>
+                    <input class="field__input form-control" onkeyup="return validate()" type="email" id="email" name="email" placeholder="Enter your email" required></div>
               </div>
               <div class="field">
                 <div class="field__label">Your message</div>
                 <div class="field__wrap">
-                    <textarea class="field__textarea form-control" id="message" name="message" placeholder="Share your details with us"></textarea></div>
+                    <textarea class="field__textarea form-control" id="message" name="message" placeholder="Share your details with us" required></textarea></div>
               </div>
               <button type="submit" class="contact__btn btn btn_orange">Send now</button>
             </form>
