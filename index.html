@@ -797,7 +797,9 @@
                   <div class="field">
                     <div class="field__label">Your email</div>
                     <div class="field__wrap">
-                        <input class="field__input form-control" type="email" id="email" name="email" placeholder="Enter your email"></div>
+                        <input class="field__input form-control"  onkeyup="return validate()" type="email" id="email" name="email" placeholder="Enter your email"></div>
+                        <label for="error" id="error" style="padding-top: 2mm;"></label><br>
+
                   </div>
                   <div class="field">
                     <div class="field__label">Your message</div>
