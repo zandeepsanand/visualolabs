@@ -11,6 +11,7 @@
   <meta name="format-detection" content="telephone=no" />
 
   <link rel="icon" type="image/png" sizes="32x32" href="img/vl violete.png" />
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
 
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
   <link rel="preconnect" href="https://fonts.gstatic.com" />
@@ -40,7 +41,23 @@
 </head>
 
 <body class="dark">
+  <div id="overlayer"></div>
+  <div class="preloader">
+     <div class="loader">
+        <span class="loader-inner"></span>
+     </div>
+     <p> Loading...</p>
+     <div class="sandimon"></div>
+  </div>
 
+  
+
+  <script>
+    $(window).load(function() {
+    $(".preloader").delay(4000).fadeOut("slow");
+    $("#overlayer").delay(4000).fadeOut("slow");
+    })
+ </script>
   <script>
 
     console.log(localStorage.getItem('darkMode'));
@@ -55,13 +72,13 @@
   </script>
 
   <div class="page">
-    <video class="video1" src="./video/videoplayback.m4v" autoplay muted loop></video>
+    <video class="video1" src="./video/aa.mp4" autoplay muted loop></video>
 
     <header class="header active">
       <div class="header__center center">
           <a class="header__logo" href="index.html"><img class="header__pic header__pic_dark"
-                  src="img/violetelogo.png" alt="" /><img class="header__pic header__pic_light"
-                  src="img/newwhite.png" alt="" /></a>
+                  src="img/VISUALO LOGO final.png" alt="" /><img class="header__pic header__pic_light"
+                  src="img/VISUALO LOGO final.png" alt="" /></a>
           <div class="header__wrapper">
               <nav class="header__nav">
                 <a class="header__link color" href="#home">Home</a>
@@ -123,10 +140,14 @@
           </div>
         </div>
         <div class="main__bg" data-aos >
+         
+          
             <div class="main__preview">
               <!-- <video src="video/Zidler_Relevant_AgenceMe_3D.mp4" autoplay loop muted></video> -->
                 <!-- <img src="img/figures-1.1.png" alt="" /> -->
                 <img src="video/sizeadjusted.png"  alt="">
+
+
 
             </div>
             <div class="main__preview">
