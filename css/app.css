@@ -201,7 +201,8 @@ body {
 .sandimon {
   width: 120px;
   height: 120px;
-  background: linear-gradient(-45deg, #ED1C24, #FCEE21);
+  /* background: linear-gradient(-45deg, #ED1C24, #FCEE21); */
+  /* background-image: url(/img/whiteorangelogo.png); */
   position: absolute;
   left: 50%;
   top: 50%;
@@ -210,7 +211,7 @@ body {
   z-index: 2500;
 }
 
-@keyframes rotation {
+/* @keyframes rotation {
   0% {
     border-radius: 5% 5% 5% 5%;
     transform: translate(-50%, -50%) rotate(0deg)
@@ -247,8 +248,16 @@ body {
     border-radius: 5% 5% 5% 5%;
     transform: translate(-50%, -50%) rotate(360deg);
   }
+} */
+.sizee{
+  width: 270px;
+  height: 100px;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  animation: rotation 4s ease-in-out infinite;
+  z-index: 2500;
 }
-
 
  /* preloader ends  */
 
