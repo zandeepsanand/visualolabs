@@ -6854,9 +6854,7 @@ body.dark .field__textarea {
   * {
     -webkit-overflow-scrolling: touch;
   }
-  html:not(.designer) .nav-holder {
-    display: block;
-  }
+ 
 
 @media only screen and (max-width: 1179px) {
   .switch {
