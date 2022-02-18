@@ -6854,7 +6854,7 @@ body.dark .field__textarea {
   * {
     -webkit-overflow-scrolling: touch;
   }
- 
+}
 
 @media only screen and (max-width: 1179px) {
   .switch {
