@@ -6845,11 +6845,18 @@ body.dark .field__textarea {
     left: calc(50% - 600px);
   }
 }
-@media only screen and (max-width: 700px){
+/* @media only screen and (max-width: 700px){
   * {
     -webkit-overflow-scrolling: touch;
   }
-}
+} */
+@media(max-width:998px) {
+  * {
+    -webkit-overflow-scrolling: touch;
+  }
+  html:not(.designer) .nav-holder {
+    display: block;
+  }
 
 @media only screen and (max-width: 1179px) {
   .switch {
