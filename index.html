@@ -70,6 +70,14 @@
     }
 
   </script>
+  <script>
+ AOS.init({
+  disable: function() {
+    var maxWidth = 800;
+    return window.innerWidth < maxWidth;
+  }
+});
+  </script>
 
   <div class="page">
     <video class="video1" src="./video/1.m4v" autoplay muted loop></video>
@@ -826,7 +834,7 @@
                     <div class="field__wrap">
                         <textarea class="field__textarea form-control" required minlength="5" id="message" name="message" placeholder="Share your details with us"></textarea></div>
                   </div>
-                  <button type="submit" class="contact__btn btn btn_orange">Send now</button>
+                  <button type="submit" class="contact__btn btn btn_orange" style="top: 382px;">Send now</button>
                 </form>
 
               </div>

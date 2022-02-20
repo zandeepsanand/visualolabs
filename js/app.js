@@ -1,4 +1,11 @@
 // svg icons support ie11
+AOS.init({
+    disable: function() {
+      var maxWidth = 800;
+      return window.innerWidth < maxWidth;
+    }
+  });
+
 (function() {
     svg4everybody();
 })();
