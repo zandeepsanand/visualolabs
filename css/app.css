@@ -5810,6 +5810,7 @@ body.dark .pricing__view .icon {
   flex-wrap: wrap;
   margin: -52px -60px 0;
   margin-bottom: 3%;
+  
 }
 
 .about__user {
@@ -8050,6 +8051,7 @@ body.dark .field__textarea {
   }
   .about__team {
     margin: -64px -30px 0;
+   
   }
   .about__user {
     -webkit-box-flex: 0;
@@ -8875,6 +8877,7 @@ body.dark .field__textarea {
   }
   .about__team {
     margin: -48px -10px 0;
+    margin-top: 0.5%;
   }
   .about__user {
     -webkit-box-flex: 0;
